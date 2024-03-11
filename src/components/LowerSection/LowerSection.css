@@ -1,0 +1,11 @@
+.lowerSection {
+  max-width: 100vw;
+}
+
+.lowerSection img {
+  width: 100%;
+}
+
+.lowerSection p {
+  text-align: center;
+}

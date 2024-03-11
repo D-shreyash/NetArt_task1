@@ -1,0 +1,13 @@
+.rightSection {
+  width: 60vw;
+}
+
+.rightSection img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .rightSection h4 {
+    display: none;
+  }
+}

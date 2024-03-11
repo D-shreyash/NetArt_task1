@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.innersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.innersection h4 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .innersection h4 {
+    display: block;
   }
+  .section > * {
+    width: 100%; /* Make each child element take up the full width on smaller screens */
+  }
+}
+
+.main {
+  background: rgb(251, 222, 160);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 222, 160, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.innerDiv {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.HorizonalLine {
+  height: 0.1rem;
+  background: red;
 }
